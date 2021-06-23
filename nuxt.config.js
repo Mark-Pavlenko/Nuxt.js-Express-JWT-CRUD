@@ -35,7 +35,6 @@ export default {
     '@nuxtjs/auth-next', // enables Nuxt Auth module
   ],
   auth: {
-    auth: {
       strategies: {
         local: {
           endpoints: {
@@ -62,7 +61,7 @@ export default {
         home: '/' // User will be redirect to this path after login if accessed login page directly
       },
       rewriteRedirects: true,
-    },
+
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

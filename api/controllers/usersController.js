@@ -33,10 +33,10 @@ module.exports.register = [
       password : req.body.password,
     })
 
-    // // encrypt password
-    // var salt = bcrypt.genSaltSync(10);
-    // var hash = bcrypt.hashSync(user.password, salt);
-    // user.password = hash
+    // encrypt password
+    let salt = bcrypt.genSaltSync(10);
+    let hash = bcrypt.hashSync(user.password, salt);
+    user.password = hash
 
     // save record
     user.save(function(err, user){
