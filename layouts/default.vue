@@ -29,6 +29,9 @@
         <ul class="navbar-nav"
           v-if="$auth.loggedIn">
           <li class="nav-item">
+            <button type="button" class="nav-link" exact-active-class="active" @click="createContract">Connect wallet</button>
+          </li>
+          <li class="nav-item">
             <nuxt-link to="/user/my-account" class="nav-link" exact-active-class="active">My Account</nuxt-link>
           </li>
           <li class="nav-item">
